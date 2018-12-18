@@ -1,0 +1,36 @@
+{
+  "name": "todo-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "test": "export NODE_ENV_=test ||SET \"NODE_ENV=test\" && mocha server/**/*.test.js",
+    "test-watch": "nodemon --exec '/npm /test'"
+  },
+  "engines": {
+    "node": "6.2.2"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "config": "^3.0.1",
+    "env": "0.0.2",
+    "eval": "^0.1.2",
+    "express": "^4.14.0",
+    "git": "^0.1.5",
+    "heroku": "^7.19.3",
+    "lodash": "^4.17.11",
+    "ls": "^0.2.1",
+    "mongodb": "^2.2.36",
+    "mongoose": "^4.13.17",
+    "validator": "^10.9.0"
+  },
+  "devDependencies": {
+    "expect": "^1.20.2",
+    "mocha": "^3.5.3",
+    "nodemon": "^1.10.2",
+    "supertest": "^2.0.0"
+  },
+  "description": ""
+}
